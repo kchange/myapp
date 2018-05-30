@@ -1,2 +1,10 @@
 <h2>Hello world</h2>
 <p>The time is now: <%= Time.now %></p>
+
+<h3>Get a random quote by clicking a format below:</h3>
+
+<ol>
+	<li><%= link_to 'HTML', quote_path %></li>
+	<li><%= link_to 'JSON', quote_path(format: 'json') %></li>
+	<li><%= link_to 'XML', quote_path(format: 'xml') %></li>
+</ol>
